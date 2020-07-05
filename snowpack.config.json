@@ -13,5 +13,8 @@
   "devOptions": {
     "open": "none",
     "port": 3000
-  }
+  },
+  "plugins": [
+    "@snowpack/plugin-parcel"
+  ]
 }
