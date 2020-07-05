@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "snowpack dev",
+    "serve:dev": "snowpack dev",
+    "serve:prod": "yarn build && sirv build -p 3000",
     "build": "snowpack build",
     "build:re": "bsb -make-world",
     "clean:re": "bsb -clean-world",
@@ -17,6 +18,7 @@
   },
   "devDependencies": {
     "@snowpack/app-scripts-preact": "^1.4.0",
-    "bs-platform": "^8.0.3"
+    "bs-platform": "^8.0.3",
+    "sirv-cli": "^1.0.3"
   }
 }
