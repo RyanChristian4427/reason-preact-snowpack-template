@@ -1,0 +1,17 @@
+{
+  "extends": "@snowpack/app-scripts-preact",
+  "scripts": {
+    "run:re,rei": "bsb -make-world",
+    "run:re,rei::watch": "$1 -w"
+  },
+  "installOptions": {
+    "alias": {
+      "react": "preact/compat",
+      "react-dom": "preact/compat"
+    }
+  },
+  "devOptions": {
+    "open": "none",
+    "port": 3000
+  }
+}

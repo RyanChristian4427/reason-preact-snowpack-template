@@ -1,0 +1,22 @@
+{
+  "name": "reason-preact",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "build:re": "bsb -make-world",
+    "clean:re": "bsb -clean-world",
+    "lint": "find ./src -regex '.*\\.re' -exec bsrefmt --in-place '{}' \\;",
+    "test": "jest"
+  },
+  "dependencies": {
+    "reason-react": "^0.9.1",
+    "preact": "^10.4.5",
+    "snowpack": "^2.6.3"
+  },
+  "devDependencies": {
+    "@snowpack/app-scripts-preact": "^1.4.0",
+    "bs-platform": "^8.0.3"
+  }
+}
