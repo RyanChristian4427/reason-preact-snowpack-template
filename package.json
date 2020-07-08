@@ -10,7 +10,7 @@
     "clean:re": "bsb -clean-world",
     "lint": "yarn bsrefmt && yarn prettier --write",
     "bsrefmt": "bsrefmt --in-place `find src -name '*.re'`",
-    "prettier": "prettier 'src/**/*.{css,scss,json}' '*.json'",
+    "prettier": "prettier 'src/**/*.{css,scss,json}' '*.{json,js}'",
     "test": "jest"
   },
   "husky": {

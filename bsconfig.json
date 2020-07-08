@@ -1,7 +1,7 @@
 {
   "name": "reason-preact-snowpack-template",
   "reason": { "react-jsx": 3 },
-  "bsc-flags": ["-bs-super-errors"],
+  "bsc-flags": ["-bs-super-errors", "-bs-no-version-header"],
   "sources": [
     {
       "dir": "src",
@@ -16,9 +16,7 @@
   ],
   "suffix": ".bs.js",
   "namespace": true,
-  "bs-dependencies": [
-    "reason-react"
-  ],
+  "bs-dependencies": ["reason-react"],
   "ppx-flags": [],
   "refmt": 3
 }
