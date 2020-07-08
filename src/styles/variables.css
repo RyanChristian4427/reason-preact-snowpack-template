@@ -1,0 +1,20 @@
+/* Color Scheme (and names) generated from https://coolors.co/ */
+
+:root {
+  --theme-isabelline: #f3e8ee;
+  --theme-deep-space-sparkle: #475b63;
+  --theme-deep-space-sparkle--dark: #42545c;
+  --theme-ash-grey: #2e2c2f;
+}
+
+.is-deep-space-sparkle {
+  color: var(--theme-isabelline);
+  background: var(--theme-deep-space-sparkle);
+  border-color: transparent;
+}
+
+.button.is-deep-space-sparkle:hover {
+  color: var(--theme-isabelline);
+  background-color: var(--theme-deep-space-sparkle--dark);
+  border-color: transparent;
+}

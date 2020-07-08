@@ -23,9 +23,11 @@
     "*.{css,scss,json}": "prettier --write"
   },
   "dependencies": {
-    "reason-react": "^0.9.1",
+    "bulma": "^0.9.0",
     "preact": "^10.4.5",
-    "snowpack": "^2.6.3"
+    "preact-feather": "^4.1.0",
+    "reason-react": "^0.9.1",
+    "snowpack": "2.5.4"
   },
   "devDependencies": {
     "@snowpack/app-scripts-preact": "^1.4.0",
