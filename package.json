@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve:dev": "snowpack dev",
-    "serve:prod": "yarn build && sirv build -p 3000",
+    "serve:prod": "yarn build && sirv build -p 3000 --single",
     "build": "snowpack build",
     "build:re": "bsb -make-world",
     "clean:re": "bsb -clean-world",
