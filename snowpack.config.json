@@ -4,17 +4,21 @@
     "run:re,rei": "bsb -make-world",
     "run:re,rei::watch": "$1 -w"
   },
+  "exclude": ["**/node_modules/**/*", "**/*.@(re|rei)"],
+  "install": ["preact", "preact-feather", "bulma/css/bulma.css"],
   "installOptions": {
     "alias": {
       "react": "preact/compat",
       "react-dom": "preact/compat"
-    }
+    },
+    "sourceMap": false
   },
   "devOptions": {
     "open": "none",
     "port": 3000
   },
-  "plugins": [
-    "@snowpack/plugin-parcel"
-  ]
+  "buildOptions": {
+    "clean": true
+  },
+  "plugins": ["@snowpack/plugin-parcel"]
 }
