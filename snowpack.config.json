@@ -2,7 +2,8 @@
   "extends": "@snowpack/app-scripts-preact",
   "scripts": {
     "run:re,rei": "bsb -make-world",
-    "run:re,rei::watch": "$1 -w"
+    "run:re,rei::watch": "$1 -w",
+    "build:css": "postcss"
   },
   "exclude": ["**/node_modules/**/*", "**/*.@(re|rei)"],
   "install": ["preact", "preact-feather", "bulma/css/bulma.css"],
